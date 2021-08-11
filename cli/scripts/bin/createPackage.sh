@@ -5,11 +5,7 @@ source bin/common.sh
 ARGUMENTS=(packageVersion notes) 
 OPT_ARGUMENTS=(componentId processName extractComponentXmlFolder componentVersion tag componentType)
 
-inputs "$@"
-if [ "$?" -gt "0" ]
-then
-    return 255;
-fi
+
 
 
 if [ ! -z "${extractComponentXmlFolder}" ]
