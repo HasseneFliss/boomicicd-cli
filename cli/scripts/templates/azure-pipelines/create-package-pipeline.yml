@@ -30,6 +30,7 @@ parameters:
 
 - name: packageVersion
   type: string
+  default: "1"
 
 - name: extractComponentXmlFolder
   type: string
