@@ -26,7 +26,7 @@ parameters:
 
 - name: notes
   type: string
-  default: ''
+  default: 'test'
 
 - name: packageVersion
   type: string
@@ -93,14 +93,14 @@ steps:
     echo "Base URL is ${baseURL}"
 
     source bin/createPackage.sh \
-      processName="${{ parameters.processName }}" \
-      componentId="${{ parameters.componentId }}" \
-      componentType=${{ parameters.componentType }} \
-      componentVersion=${{ parameters.componentVersion }} \
-      packageVersion="${{ parameters.packageVersion }}" \
-      notes="${{ parameters.notes }}" \
+      processName="boomi-ops-test" \
+      componentId="adacbafd-2556-43e4-b107-b206d10e46bf" \
+      componentType="process" \
+      componentVersion=1 \
+      packageVersion="1" \
+      notes="test pipeline" \
       extractComponentXmlFolder="${{ parameters.extractComponentXmlFolder }}" \
-      tag="${{ parameters.tag }}" \
-      listenerStatus=${{ parameters.listenerStatus }}
+      tag="v0.0.0" \
+      listenerStatus= RUNNING
     
   displayName: 'Boomi Create Package'
