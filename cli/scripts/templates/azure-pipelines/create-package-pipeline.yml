@@ -93,8 +93,8 @@ steps:
     echo "Base URL is ${baseURL}"
 
     source bin/createPackage.sh \
-      processName="boomi-ops-test" \
-      componentId="adacbafd-2556-43e4-b107-b206d10e46bf" \
+      processName="devops" \
+      componentId="ad377133-f670-4233-88e7-bdbb6346942a" \
       componentType="process" \
       componentVersion=1 \
       packageVersion="1" \
